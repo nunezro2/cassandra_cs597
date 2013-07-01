@@ -1,0 +1,24 @@
+CREATE KEYSPACE ks1
+WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 2 };
+
+use ks1;
+
+
+CREATE TABLE users (
+user_name varchar PRIMARY KEY,
+password varchar,
+gender varchar,
+session_token varchar,
+state varchar,
+birth_year bigint
+);
+
+
+INSERT INTO users (user_name, password, gender, session_token, state, birth_year) VALUES ( 'sheldom', '888888', 'M', 'aaaa-bbbb-cccc-dddd', 'NY', 1938);
+INSERT INTO users (user_name, password, gender, session_token, state, birth_year) VALUES ( 'superman', '888888', 'F', 'aaaa-bbbb-cccc-dddd', 'Texas', 1990);
+INSERT INTO users (user_name, password, gender, session_token, state, birth_year) VALUES ( 'batman', '888888', 'M', 'aaaa-bbbb-cccc-dddd', 'California', 1967);
+
+
+select * from users;
+
+ALTER TABLE users drop gender;

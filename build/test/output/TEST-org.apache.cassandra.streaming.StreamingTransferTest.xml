@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="claulaptop" name="org.apache.cassandra.streaming.StreamingTransferTest" tests="1" time="0.0" timestamp="2013-03-10T21:24:49">
+  <properties>
+    <property name="test.long.src" value="/home/nunezro2/git/cassandra-trunk/test/long" />
+    <property name="env.DESKTOP_SESSION" value="ubuntu" />
+    <property name="env.OLDPWD" value="/home/nunezro2/git" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="stress.manifest" value="/home/nunezro2/git/cassandra-trunk/build/classes/stress/MANIFEST.MF" />
+    <property name="env.XDG_SESSION_COOKIE" value="40d48cbcf2384b52dcf69f4f00000008-1362946735.118628-843449080" />
+    <property name="build.src.java" value="/home/nunezro2/git/cassandra-trunk/src/java" />
+    <property name="cobertura.build.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+    <property name="env.LOGNAME" value="nunezro2" />
+    <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.SESSION_MANAGER" value="local/claulaptop:@/tmp/.ICE-unix/1674,unix/claulaptop:/tmp/.ICE-unix/1674" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="scm.url" value="http://git-wip-us.apache.org/repos/asf?p=cassandra.git;a=tree" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path" />
+    <property name="java.version" value="1.7.0_17" />
+    <property name="maven-ant-tasks.version" value="2.1.3" />
+    <property name="test.data" value="/home/nunezro2/git/cassandra-trunk/test/data" />
+    <property name="eclipse.project.name" value="cassandra-trunk" />
+    <property name="interface.thrift.gen-java" value="/home/nunezro2/git/cassandra-trunk/interface/thrift/gen-java" />
+    <property name="build.src.gen-java" value="/home/nunezro2/git/cassandra-trunk/src/gen-java" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="javadoc.dir" value="/home/nunezro2/git/cassandra-trunk/build/javadoc" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+    <property name="test.timeout" value="60000" />
+    <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-gOdEEh" />
+    <property name="cobertura.datafile" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/cobertura.ser" />
+    <property name="user.name" value="nunezro2" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="test.resources" value="/home/nunezro2/git/cassandra-trunk/test/resources" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-wEH7sq2ktA,guid=9edd180bdbaaaf04862f45e300000024" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+    <property name="maven-ant-tasks.local" value="/home/nunezro2/.m2/repository/org/apache/maven/maven-ant-tasks" />
+    <property name="test.long.timeout" value="600000" />
+    <property name="path.separator" value=":" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="env.HOME" value="/home/nunezro2" />
+    <property name="test.conf" value="/home/nunezro2/git/cassandra-trunk/test/conf" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  test" />
+    <property name="cql3current" value="true" />
+    <property name="javadoc.jars.dir" value="/home/nunezro2/git/cassandra-trunk/build/javadocs" />
+    <property name="ant.file" value="/home/nunezro2/git/cassandra-trunk/build.xml" />
+    <property name="ant.file.apache-cassandra" value="/home/nunezro2/git/cassandra-trunk/build.xml" />
+    <property name="build.src" value="/home/nunezro2/git/cassandra-trunk/src" />
+    <property name="env._" value="/usr/bin/ant" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.GNOME_KEYRING_PID" value="1663" />
+    <property name="TODAY" value="March 10 2013" />
+    <property name="user.language" value="en" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.SSH_AGENT_PID" value="1711" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="version" value="1.2.2-SNAPSHOT" />
+    <property name="stress.build.src" value="/home/nunezro2/git/cassandra-trunk/tools/stress/src" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="version.properties.dir" value="/home/nunezro2/git/cassandra-trunk/build/classes/main/org/apache/cassandra/config/" />
+    <property name="build.dir.lib" value="/home/nunezro2/git/cassandra-trunk/build/lib" />
+    <property name="ant.file.type.apache-cassandra" value="file" />
+    <property name="final.name" value="apache-cassandra-1.2.2-SNAPSHOT" />
+    <property name="env.GDMSESSION" value="ubuntu" />
+    <property name="maven-repository-id" value="apache.snapshots.https" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+    <property name="env.WINDOWID" value="77594630" />
+    <property name="build.test.dir" value="/home/nunezro2/git/cassandra-trunk/build/test" />
+    <property name="avro.src" value="/home/nunezro2/git/cassandra-trunk/src/avro" />
+    <property name="env.COMPIZ_CONFIG_PROFILE" value="ubuntu" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+    <property name="scm.connection" value="scm:git://git.apache.org/cassandra.git" />
+    <property name="interface.dir" value="/home/nunezro2/git/cassandra-trunk/interface" />
+    <property name="build.src.resources" value="/home/nunezro2/git/cassandra-trunk/src/resources" />
+    <property name="os.name" value="Linux" />
+    <property name="maven-repository-url" value="https://repository.apache.org/content/repositories/snapshots" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM" value="xterm" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
+    <property name="maven-ant-tasks.url" value="http://repo2.maven.org/maven2/org/apache/maven/maven-ant-tasks" />
+    <property name="java.library.path" value="/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" />
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="basedir" value="/home/nunezro2/git/cassandra-trunk" />
+    <property name="java.class.version" value="51.0" />
+    <property name="env.SHLVL" value="1" />
+    <property name="build.classes.thrift" value="/home/nunezro2/git/cassandra-trunk/build/classes/thrift" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="cobertura.report.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/report" />
+    <property name="artifact.remoteRepository.oauth" value="http://oauth.googlecode.com/svn/code/maven" />
+    <property name="build.lib" value="/home/nunezro2/git/cassandra-trunk/lib" />
+    <property name="testfailed" value="true" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/i386" />
+    <property name="build.dir" value="/home/nunezro2/git/cassandra-trunk/build" />
+    <property name="is.source.artifact" value="true" />
+    <property name="build.classes" value="/home/nunezro2/git/cassandra-trunk/build/classes" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="env.USER" value="nunezro2" />
+    <property name="cliUpToDate" value="true" />
+    <property name="stress.build.classes" value="/home/nunezro2/git/cassandra-trunk/build/classes/stress" />
+    <property name="YEAR" value="2013" />
+    <property name="ant.project.name" value="apache-cassandra" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="avroINProtoUpToDate" value="true" />
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="maven-ant-tasks.jar.exists" value="true" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="cobertura.classes.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/classes" />
+    <property name="os.version" value="3.2.0-38-generic-pae" />
+    <property name="user.home" value="/home/nunezro2" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
+    <property name="artifact.remoteRepository.apache" value="https://repository.apache.org/content/repositories/releases" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="test.lib" value="/home/nunezro2/git/cassandra-trunk/build/test/lib" />
+    <property name="test.unit.src" value="/home/nunezro2/git/cassandra-trunk/test/unit" />
+    <property name="cobertura.version" value="1.9.4.1" />
+    <property name="env.XAUTHORITY" value="/home/nunezro2/.Xauthority" />
+    <property name="user.dir" value="/home/nunezro2/git/cassandra-trunk" />
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+    <property name="env.PWD" value="/home/nunezro2/git/cassandra-trunk" />
+    <property name="test.dir" value="/home/nunezro2/git/cassandra-trunk/test" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.vm.version" value="23.7-b01" />
+    <property name="java.class.path" value="/usr/share/ant/lib/ant-launcher.jar:/usr/share/java/xmlParserAPIs.jar:/usr/share/java/xercesImpl.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/junit.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar" />
+    <property name="DSTAMP" value="20130310" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="os.arch" value="i386" />
+    <property name="test.name" value="*Test" />
+    <property name="dist.dir" value="/home/nunezro2/git/cassandra-trunk/build/dist" />
+    <property name="interface.thrift.dir" value="/home/nunezro2/git/cassandra-trunk/interface/thrift" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="TSTAMP" value="1605" />
+    <property name="file.separator" value="/" />
+    <property name="build.classes.main" value="/home/nunezro2/git/cassandra-trunk/build/classes/main" />
+    <property name="cql2current" value="true" />
+    <property name="java.runtime.version" value="1.7.0_17-b02" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-gOdEEh/ssh" />
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg" />
+    <property name="maven.version" value="3.0.3" />
+    <property name="user.country" value="US" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="artifact.remoteRepository.java.net2" value="http://download.java.net/maven/2" />
+    <property name="artifact.remoteRepository.central" value="http://repo1.maven.org/maven2" />
+    <property name="scm.developerConnection" value="scm:git://git.apache.org/cassandra.git" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="artifact.remoteRepository.jclouds" value="http://jclouds.googlecode.com/svn/repo" />
+    <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-gOdEEh/gpg:0:1" />
+    <property name="base.version" value="1.2.2" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="test.classes" value="/home/nunezro2/git/cassandra-trunk/build/test/classes" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+  </properties>
+  <testcase classname="org.apache.cassandra.streaming.StreamingTransferTest" name="testRandomSSTableTransfer" time="0.0">
+    <error message="Timeout occurred. Please note the time in the report does not reflect the time until the timeout." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Timeout occurred. Please note the time in the report does not reflect the time until the timeout.
+</error>
+  </testcase>
+</testsuite>

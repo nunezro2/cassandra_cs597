@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="claulaptop" name="org.apache.cassandra.dht.OrderPreservingPartitionerTest" tests="7" time="2.382" timestamp="2013-03-10T21:16:35">
+  <properties>
+    <property name="test.long.src" value="/home/nunezro2/git/cassandra-trunk/test/long"></property>
+    <property name="env.DESKTOP_SESSION" value="ubuntu"></property>
+    <property name="env.OLDPWD" value="/home/nunezro2/git"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre"></property>
+    <property name="env.DISPLAY" value=":0"></property>
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"></property>
+    <property name="stress.manifest" value="/home/nunezro2/git/cassandra-trunk/build/classes/stress/MANIFEST.MF"></property>
+    <property name="env.XDG_SESSION_COOKIE" value="40d48cbcf2384b52dcf69f4f00000008-1362946735.118628-843449080"></property>
+    <property name="build.src.java" value="/home/nunezro2/git/cassandra-trunk/src/java"></property>
+    <property name="cobertura.build.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura"></property>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed"></property>
+    <property name="env.LOGNAME" value="nunezro2"></property>
+    <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so"></property>
+    <property name="debuglevel" value="source,lines,vars"></property>
+    <property name="env.SESSION_MANAGER" value="local/claulaptop:@/tmp/.ICE-unix/1674,unix/claulaptop:/tmp/.ICE-unix/1674"></property>
+    <property name="sun.os.patch.level" value="unknown"></property>
+    <property name="java.vendor.url" value="http://java.oracle.com/"></property>
+    <property name="scm.url" value="http://git-wip-us.apache.org/repos/asf?p=cassandra.git;a=tree"></property>
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0"></property>
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path"></property>
+    <property name="java.version" value="1.7.0_17"></property>
+    <property name="maven-ant-tasks.version" value="2.1.3"></property>
+    <property name="test.data" value="/home/nunezro2/git/cassandra-trunk/test/data"></property>
+    <property name="eclipse.project.name" value="cassandra-trunk"></property>
+    <property name="interface.thrift.gen-java" value="/home/nunezro2/git/cassandra-trunk/interface/thrift/gen-java"></property>
+    <property name="build.src.gen-java" value="/home/nunezro2/git/cassandra-trunk/src/gen-java"></property>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"></property>
+    <property name="javadoc.dir" value="/home/nunezro2/git/cassandra-trunk/build/javadoc"></property>
+    <property name="ant.project.invoked-targets" value="test"></property>
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"></property>
+    <property name="test.timeout" value="60000"></property>
+    <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-gOdEEh"></property>
+    <property name="cobertura.datafile" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/cobertura.ser"></property>
+    <property name="user.name" value="nunezro2"></property>
+    <property name="env.LANG" value="en_US.UTF-8"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="test.resources" value="/home/nunezro2/git/cassandra-trunk/test/resources"></property>
+    <property name="sun.jnu.encoding" value="UTF-8"></property>
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-wEH7sq2ktA,guid=9edd180bdbaaaf04862f45e300000024"></property>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="user.timezone" value=""></property>
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s"></property>
+    <property name="maven-ant-tasks.local" value="/home/nunezro2/.m2/repository/org/apache/maven/maven-ant-tasks"></property>
+    <property name="test.long.timeout" value="600000"></property>
+    <property name="path.separator" value=":"></property>
+    <property name="file.encoding" value="UTF-8"></property>
+    <property name="ant.project.default-target" value="jar"></property>
+    <property name="env.HOME" value="/home/nunezro2"></property>
+    <property name="test.conf" value="/home/nunezro2/git/cassandra-trunk/test/conf"></property>
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.apache.cassandra.dht.OrderPreservingPartitionerTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/nunezro2/git/cassandra-trunk/build/test/output/TEST-org.apache.cassandra.dht.OrderPreservingPartitionerTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter crashfile=/home/nunezro2/git/cassandra-trunk/junitvmwatcher2337143996837195960.properties propsfile=/home/nunezro2/git/cassandra-trunk/junit6480562054427266672.properties"></property>
+    <property name="cql3current" value="true"></property>
+    <property name="javadoc.jars.dir" value="/home/nunezro2/git/cassandra-trunk/build/javadocs"></property>
+    <property name="ant.file" value="/home/nunezro2/git/cassandra-trunk/build.xml"></property>
+    <property name="ant.file.apache-cassandra" value="/home/nunezro2/git/cassandra-trunk/build.xml"></property>
+    <property name="build.src" value="/home/nunezro2/git/cassandra-trunk/src"></property>
+    <property name="env._" value="/usr/bin/ant"></property>
+    <property name="java.io.tmpdir" value="/tmp"></property>
+    <property name="env.GNOME_KEYRING_PID" value="1663"></property>
+    <property name="TODAY" value="March 10 2013"></property>
+    <property name="user.language" value="en"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="ant.file.type" value="file"></property>
+    <property name="env.SSH_AGENT_PID" value="1711"></property>
+    <property name="java.vm.info" value="mixed mode"></property>
+    <property name="sun.desktop" value="gnome"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="version" value="1.2.2-SNAPSHOT"></property>
+    <property name="stress.build.src" value="/home/nunezro2/git/cassandra-trunk/tools/stress/src"></property>
+    <property name="env.COLORTERM" value="gnome-terminal"></property>
+    <property name="version.properties.dir" value="/home/nunezro2/git/cassandra-trunk/build/classes/main/org/apache/cassandra/config/"></property>
+    <property name="build.dir.lib" value="/home/nunezro2/git/cassandra-trunk/build/lib"></property>
+    <property name="ant.file.type.apache-cassandra" value="file"></property>
+    <property name="final.name" value="apache-cassandra-1.2.2-SNAPSHOT"></property>
+    <property name="env.GDMSESSION" value="ubuntu"></property>
+    <property name="maven-repository-id" value="apache.snapshots.https"></property>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"></property>
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path"></property>
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011"></property>
+    <property name="env.WINDOWID" value="77594630"></property>
+    <property name="build.test.dir" value="/home/nunezro2/git/cassandra-trunk/build/test"></property>
+    <property name="avro.src" value="/home/nunezro2/git/cassandra-trunk/src/avro"></property>
+    <property name="env.COMPIZ_CONFIG_PROFILE" value="ubuntu"></property>
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0"></property>
+    <property name="scm.connection" value="scm:git://git.apache.org/cassandra.git"></property>
+    <property name="interface.dir" value="/home/nunezro2/git/cassandra-trunk/interface"></property>
+    <property name="build.src.resources" value="/home/nunezro2/git/cassandra-trunk/src/resources"></property>
+    <property name="os.name" value="Linux"></property>
+    <property name="maven-repository-url" value="https://repository.apache.org/content/repositories/snapshots"></property>
+    <property name="java.specification.vendor" value="Oracle Corporation"></property>
+    <property name="env.TERM" value="xterm"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM"></property>
+    <property name="legacy-sstable-root" value="/home/nunezro2/git/cassandra-trunk/test/data/legacy-sstables"></property>
+    <property name="maven-ant-tasks.url" value="http://repo2.maven.org/maven2/org/apache/maven/maven-ant-tasks"></property>
+    <property name="java.library.path" value="/usr/java/packages/lib/i386:/lib:/usr/lib"></property>
+    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"></property>
+    <property name="storage-config" value="/home/nunezro2/git/cassandra-trunk/test/conf"></property>
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s"></property>
+    <property name="ant.java.version" value="1.7"></property>
+    <property name="basedir" value="/home/nunezro2/git/cassandra-trunk"></property>
+    <property name="java.class.version" value="51.0"></property>
+    <property name="env.SHLVL" value="1"></property>
+    <property name="build.classes.thrift" value="/home/nunezro2/git/cassandra-trunk/build/classes/thrift"></property>
+    <property name="ant.home" value="/usr/share/ant"></property>
+    <property name="cobertura.report.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/report"></property>
+    <property name="artifact.remoteRepository.oauth" value="http://oauth.googlecode.com/svn/code/maven"></property>
+    <property name="build.lib" value="/home/nunezro2/git/cassandra-trunk/lib"></property>
+    <property name="log4j.configuration" value="log4j-junit.properties"></property>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/cobertura.ser"></property>
+    <property name="testfailed" value="true"></property>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/i386"></property>
+    <property name="build.dir" value="/home/nunezro2/git/cassandra-trunk/build"></property>
+    <property name="is.source.artifact" value="true"></property>
+    <property name="build.classes" value="/home/nunezro2/git/cassandra-trunk/build/classes"></property>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"></property>
+    <property name="env.USER" value="nunezro2"></property>
+    <property name="cliUpToDate" value="true"></property>
+    <property name="stress.build.classes" value="/home/nunezro2/git/cassandra-trunk/build/classes/stress"></property>
+    <property name="YEAR" value="2013"></property>
+    <property name="ant.project.name" value="apache-cassandra"></property>
+    <property name="java.vm.specification.version" value="1.7"></property>
+    <property name="avroINProtoUpToDate" value="true"></property>
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"></property>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"></property>
+    <property name="migration-sstable-root" value="/home/nunezro2/git/cassandra-trunk/test/data/migration-sstables"></property>
+    <property name="sun.cpu.isalist" value=""></property>
+    <property name="maven-ant-tasks.jar.exists" value="true"></property>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext"></property>
+    <property name="cobertura.classes.dir" value="/home/nunezro2/git/cassandra-trunk/build/cobertura/classes"></property>
+    <property name="os.version" value="3.2.0-38-generic-pae"></property>
+    <property name="user.home" value="/home/nunezro2"></property>
+    <property name="env.XDG_CURRENT_DESKTOP" value="Unity"></property>
+    <property name="artifact.remoteRepository.apache" value="https://repository.apache.org/content/repositories/releases"></property>
+    <property name="java.vm.vendor" value="Oracle Corporation"></property>
+    <property name="test.lib" value="/home/nunezro2/git/cassandra-trunk/build/test/lib"></property>
+    <property name="test.unit.src" value="/home/nunezro2/git/cassandra-trunk/test/unit"></property>
+    <property name="cobertura.version" value="1.9.4.1"></property>
+    <property name="env.XAUTHORITY" value="/home/nunezro2/.Xauthority"></property>
+    <property name="user.dir" value="/home/nunezro2/git/cassandra-trunk"></property>
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"></property>
+    <property name="env.PWD" value="/home/nunezro2/git/cassandra-trunk"></property>
+    <property name="cassandra.ring_delay_ms" value="1000"></property>
+    <property name="test.dir" value="/home/nunezro2/git/cassandra-trunk/test"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="java.vm.version" value="23.7-b01"></property>
+    <property name="java.class.path" value="/home/nunezro2/git/cassandra-trunk/build/classes/main:/home/nunezro2/git/cassandra-trunk/build/classes/thrift:/home/nunezro2/git/cassandra-trunk/lib/antlr-3.2.jar:/home/nunezro2/git/cassandra-trunk/lib/avro-1.4.0-fixes.jar:/home/nunezro2/git/cassandra-trunk/lib/avro-1.4.0-sources-fixes.jar:/home/nunezro2/git/cassandra-trunk/lib/commons-cli-1.1.jar:/home/nunezro2/git/cassandra-trunk/lib/commons-codec-1.2.jar:/home/nunezro2/git/cassandra-trunk/lib/commons-lang-2.6.jar:/home/nunezro2/git/cassandra-trunk/lib/compress-lzf-0.8.4.jar:/home/nunezro2/git/cassandra-trunk/lib/concurrentlinkedhashmap-lru-1.3.jar:/home/nunezro2/git/cassandra-trunk/lib/guava-13.0.1.jar:/home/nunezro2/git/cassandra-trunk/lib/high-scale-lib-1.1.2.jar:/home/nunezro2/git/cassandra-trunk/lib/jackson-core-asl-1.9.2.jar:/home/nunezro2/git/cassandra-trunk/lib/jackson-mapper-asl-1.9.2.jar:/home/nunezro2/git/cassandra-trunk/lib/jamm-0.2.5.jar:/home/nunezro2/git/cassandra-trunk/lib/jbcrypt-0.3m.jar:/home/nunezro2/git/cassandra-trunk/lib/jline-1.0.jar:/home/nunezro2/git/cassandra-trunk/lib/json-simple-1.1.jar:/home/nunezro2/git/cassandra-trunk/lib/libthrift-0.9.0.jar:/home/nunezro2/git/cassandra-trunk/lib/log4j-1.2.16.jar:/home/nunezro2/git/cassandra-trunk/lib/lz4-1.1.0.jar:/home/nunezro2/git/cassandra-trunk/lib/metrics-core-2.0.3.jar:/home/nunezro2/git/cassandra-trunk/lib/netty-3.5.9.Final.jar:/home/nunezro2/git/cassandra-trunk/lib/servlet-api-2.5-20081211.jar:/home/nunezro2/git/cassandra-trunk/lib/slf4j-api-1.7.2.jar:/home/nunezro2/git/cassandra-trunk/lib/slf4j-log4j12-1.7.2.jar:/home/nunezro2/git/cassandra-trunk/lib/snakeyaml-1.6.jar:/home/nunezro2/git/cassandra-trunk/lib/snappy-java-1.0.4.1.jar:/home/nunezro2/git/cassandra-trunk/lib/snaptree-0.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/ant-1.6.5.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/apache-rat-0.6.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/apache-rat-core-0.6.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/apache-rat-tasks-0.6.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/asm-3.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/avro-1.3.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-beanutils-1.7.0.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-beanutils-core-1.8.0.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-cli-1.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-codec-1.4.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-collections-3.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-configuration-1.6.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-digester-1.8.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-el-1.0.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-httpclient-3.0.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-lang-2.4.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-logging-1.1.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-math-2.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/commons-net-1.4.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/core-3.1.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/hadoop-core-1.0.3.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/hsqldb-1.8.0.10.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jackson-core-asl-1.0.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jackson-mapper-asl-1.0.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jasper-compiler-5.5.12.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jasper-runtime-5.5.12.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jets3t-0.7.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jetty-6.1.26.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jetty-util-6.1.26.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jna-3.2.7.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jopt-simple-3.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jsp-2.1-6.1.14.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/jsp-api-2.1-6.1.14.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/junit-4.6.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/kfs-0.3.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/oro-2.0.8.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/paranamer-2.2.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/paranamer-ant-2.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/paranamer-generator-2.1.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/pig-0.10.0.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/qdox-1.10.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/servlet-api-2.5-20081211.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/servlet-api-2.5-6.1.14.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/slf4j-api-1.5.11.jar:/home/nunezro2/git/cassandra-trunk/build/lib/jars/xmlenc-0.52.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/ant-1.6.5-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/apache-rat-core-0.6-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/apache-rat-tasks-0.6-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/avro-1.3.2-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-beanutils-1.7.0-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-cli-1.2-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-codec-1.4-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-collections-3.2-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-configuration-1.6-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-digester-1.8-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-el-1.0-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-httpclient-3.0.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-lang-2.4-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-logging-1.1.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-math-2.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/commons-net-1.4.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jackson-core-asl-1.0.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jackson-mapper-asl-1.0.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jets3t-0.7.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jetty-6.1.26-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jetty-util-6.1.26-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jna-3.2.7-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jopt-simple-3.2-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jsp-2.1-6.1.14-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/jsp-api-2.1-6.1.14-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/junit-4.6-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/oro-2.0.8-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/paranamer-2.2-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/paranamer-ant-2.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/paranamer-generator-2.1-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/pig-0.10.0-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/qdox-1.10-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/servlet-api-2.5-20081211-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/servlet-api-2.5-6.1.14-sources.jar:/home/nunezro2/git/cassandra-trunk/build/lib/sources/slf4j-api-1.5.11-sources.jar:/home/nunezro2/git/cassandra-trunk/build/test/classes:/home/nunezro2/git/cassandra-trunk/test/conf:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar:/home/nunezro2/git/cassandra-trunk/lib/jamm-0.2.5.jar"></property>
+    <property name="DSTAMP" value="20130310"></property>
+    <property name="ant.library.dir" value="/usr/share/ant/lib"></property>
+    <property name="os.arch" value="i386"></property>
+    <property name="test.name" value="*Test"></property>
+    <property name="dist.dir" value="/home/nunezro2/git/cassandra-trunk/build/dist"></property>
+    <property name="interface.thrift.dir" value="/home/nunezro2/git/cassandra-trunk/interface/thrift"></property>
+    <property name="sun.java.launcher" value="SUN_STANDARD"></property>
+    <property name="corrupt-sstable-root" value="/home/nunezro2/git/cassandra-trunk/test/data/corrupt-sstables"></property>
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar"></property>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"></property>
+    <property name="TSTAMP" value="1605"></property>
+    <property name="file.separator" value="/"></property>
+    <property name="build.classes.main" value="/home/nunezro2/git/cassandra-trunk/build/classes/main"></property>
+    <property name="cql2current" value="true"></property>
+    <property name="java.runtime.version" value="1.7.0_17-b02"></property>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes"></property>
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-gOdEEh/ssh"></property>
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg"></property>
+    <property name="maven.version" value="3.0.3"></property>
+    <property name="user.country" value="US"></property>
+    <property name="env.SHELL" value="/bin/bash"></property>
+    <property name="artifact.remoteRepository.java.net2" value="http://download.java.net/maven/2"></property>
+    <property name="artifact.remoteRepository.central" value="http://repo1.maven.org/maven2"></property>
+    <property name="scm.developerConnection" value="scm:git://git.apache.org/cassandra.git"></property>
+    <property name="java.vendor" value="Oracle Corporation"></property>
+    <property name="artifact.remoteRepository.jclouds" value="http://jclouds.googlecode.com/svn/repo"></property>
+    <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-gOdEEh/gpg:0:1"></property>
+    <property name="base.version" value="1.2.2"></property>
+    <property name="java.specification.version" value="1.7"></property>
+    <property name="test.classes" value="/home/nunezro2/git/cassandra-trunk/build/test/classes"></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated"></property>
+  </properties>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testCompare" time="1.023"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testMidpoint" time="0.331"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testMidpointMinimum" time="0.399"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testMidpointWrapping" time="0.119"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testTokenFactoryBytes" time="0.055"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testTokenFactoryStrings" time="0.1"></testcase>
+  <testcase classname="org.apache.cassandra.dht.OrderPreservingPartitionerTest" name="testDescribeOwnership" time="0.299"></testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
